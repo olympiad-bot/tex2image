@@ -1,6 +1,6 @@
 [project]
 name = "tex2image"
-version = "0.1.2"
+version = "0.1.3"
 description = "A simple python library for converting latex snippets to images."
 readme = "README.md"
 authors = [
