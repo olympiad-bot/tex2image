@@ -1,6 +1,7 @@
 # tex2image
 
 [![Documentation Status](https://readthedocs.org/projects/tex2image/badge/?version=latest)](https://tex2image.readthedocs.io/en/latest/?badge=latest)
+[![PyPI Version](https://img.shields.io/pypi/v/tex2image.svg)](https://pypi.python.org/pypi/tex2image)
 
 This is a simple library to generate images from tex snippets.
 
