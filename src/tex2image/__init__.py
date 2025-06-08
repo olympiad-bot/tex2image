@@ -26,7 +26,11 @@ DEFAULT_TEMPLATE = r"""
 
 \end{{document}}
 """
-"""The default template for `latex_to_png`"""
+"""The default template for :func:`latex_to_png`.
+
+This is passed to ``DEFAULT_TEMPLATE.format(snippet=latex_snippet)`` in
+:func:`latex_to_png`.
+"""
 
 
 def latex_to_png(
@@ -43,23 +47,27 @@ def latex_to_png(
     process.
 
     :param latex_snippet: The latex code to render.
+
     :param temp_dir: The directory in which the generated image will be saved.
+
     :param template: If None, then the latex_snippet will be directly passed to
         `pdflatex`.
         Otherwise, `template.format(snippet=latex_snippet)` will be passed to
         `pdflatex`.
+        The default value is :any:`DEFAULT_TEMPLATE`.
 
-    # Example
+    Example
+    =======
 
-    ```py
-    from pathlib import Path
-    from tempfile import TemporaryDirectory
+    .. code-block:: python
 
-    with TemporaryDirectory() as temp_dir:
-        latex_to_png("Pythagorean Theorem: $a^2 + b^2 = c^2$.", Path(temp_dir))
-        image_file_path = Path(temp_dir) / "main.png"
-        # Do something with the image here, before temp_dir gets deleted...
-    ```
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory() as temp_dir:
+            latex_to_png("Pythagorean Theorem: $a^2 + b^2 = c^2$.", Path(temp_dir))
+            image_file_path = Path(temp_dir) / "main.png"
+            # Do something with the image here, before temp_dir gets deleted...
     """
     (temp_dir / "main.tex").write_text(
         template.format(snippet=latex_snippet)
