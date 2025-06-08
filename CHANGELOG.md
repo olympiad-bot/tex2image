@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/olympiad-bot/tex2image/compare/v0.1.1...v0.1.2) (2025-06-08)
+
+
+### Documentation
+
+* add docs badge to README ([df8fd76](https://github.com/olympiad-bot/tex2image/commit/df8fd7632d4809abb7ed34c20827329b26190ea6))
+
 ## [0.1.1](https://github.com/olympiad-bot/tex2image/compare/v0.1.0...v0.1.1) (2025-06-08)
 
 
