@@ -28,7 +28,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-    if: ${{ needs.release.outputs.release_created }}
+    if: ${{ needs.release.outputs.releases_created }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v3
