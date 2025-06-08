@@ -14,7 +14,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [dependency-groups]
-dev = [
+docs = [
     "requests>=2.32.3",
     "sphinx-rtd-theme>=3.0.2",
     "sphinx>=7.4.7",
