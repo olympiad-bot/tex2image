@@ -1,9 +1,13 @@
 {
-    "extra-files": [
-        {
-            "type": "toml",
-            "path": "pyproject.toml",
-            "jsonpath": "project.version"
+    "packages": {
+        ".": {
+            "extra-files": [
+                {
+                    "type": "toml",
+                    "path": "pyproject.toml",
+                    "jsonpath": "project.version"
+                }
+            ]
         }
-    ]
+    }
 }
