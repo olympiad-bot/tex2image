@@ -1,5 +1,7 @@
 # tex2image
 
+[![Documentation Status](https://readthedocs.org/projects/tex2image/badge/?version=latest)](https://tex2image.readthedocs.io/en/latest/?badge=latest)
+
 This is a simple library to generate images from tex snippets.
 
 It uses the [standalone](https://ctan.org/pkg/standalone) latex package to
