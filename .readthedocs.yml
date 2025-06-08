@@ -5,9 +5,8 @@ build:
   tools:
     python: "3.12"
   jobs:
-    build:
-      install:
-        - pip install --group "docs"
+    install:
+      - pip install --group "docs"
 
 sphinx:
    configuration: docs/conf.py
