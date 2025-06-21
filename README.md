@@ -15,4 +15,4 @@ execute.
 
 An easy way to use this library is via Docker.
 
-See the [`example`](./example) folder for a full example.
+See the [`example`](https://github.com/olympiad-bot/tex2image/tree/main/examples) folder for a full example.

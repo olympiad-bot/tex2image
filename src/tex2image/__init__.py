@@ -26,10 +26,10 @@ DEFAULT_TEMPLATE = r"""
 
 \end{{document}}
 """
-"""The default template for :func:`latex_to_png`.
+"""The default template for [`latex_to_png`][tex2image.latex_to_png].
 
-This is passed to ``DEFAULT_TEMPLATE.format(snippet=latex_snippet)`` in
-:func:`latex_to_png`.
+This is passed to `DEFAULT_TEMPLATE.format(snippet=latex_snippet)` in
+[`latex_to_png`][tex2image.latex_to_png].
 """
 
 
@@ -46,28 +46,27 @@ def latex_to_png(
     The directory may also contain auxiliary files generated from the compilation
     process.
 
-    :param latex_snippet: The latex code to render.
+    Parameters:
+        latex_snippet: The latex code to render.
 
-    :param temp_dir: The directory in which the generated image will be saved.
+        temp_dir: The directory in which the generated image will be saved.
 
-    :param template: If None, then the latex_snippet will be directly passed to
-        `pdflatex`.
-        Otherwise, `template.format(snippet=latex_snippet)` will be passed to
-        `pdflatex`.
-        The default value is :any:`DEFAULT_TEMPLATE`.
+        template: If None, then the latex_snippet will be directly passed to
+            `pdflatex`.
+            Otherwise, `template.format(snippet=latex_snippet)` will be passed to
+            `pdflatex`.
 
-    Example
-    =======
+    Example:
 
-    .. code-block:: python
+    ```py
+    from pathlib import Path
+    from tempfile import TemporaryDirectory
 
-        from pathlib import Path
-        from tempfile import TemporaryDirectory
-
-        with TemporaryDirectory() as temp_dir:
-            latex_to_png("Pythagorean Theorem: $a^2 + b^2 = c^2$.", Path(temp_dir))
-            image_file_path = Path(temp_dir) / "main.png"
-            # Do something with the image here, before temp_dir gets deleted...
+    with TemporaryDirectory() as temp_dir:
+        latex_to_png("Pythagorean Theorem: $a^2 + b^2 = c^2$.", Path(temp_dir))
+        image_file_path = Path(temp_dir) / "main.png"
+        # Do something with the image here, before temp_dir gets deleted...
+    ```
     """
     (temp_dir / "main.tex").write_text(
         template.format(snippet=latex_snippet)
@@ -77,15 +76,6 @@ def latex_to_png(
 
     run_pdflatex(temp_dir, "main.tex")
     run_pdftoppm(temp_dir, "main.pdf", "main.png")
-
-
-class RenderingException(Exception): ...
-
-
-class LatexCompilationError(RenderingException): ...
-
-
-class PdfToPpmError(RenderingException): ...
 
 
 def run_pdflatex(directory: Path, file_name: str) -> None:
@@ -121,5 +111,4 @@ def run_pdftoppm(directory: Path, input_file_name: str, output_file_name) -> Non
             stdout=image_file,
             stderr=subprocess.DEVNULL,
         )
-    if pdftoppm_result.returncode != 0:
-        raise PdfToPpmError
+    pdftoppm_result.check_returncode()
