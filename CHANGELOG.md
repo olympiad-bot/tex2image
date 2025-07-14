@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/olympiad-bot/tex2image/compare/v0.1.3...v0.1.4) (2025-07-14)
+
+
+### Documentation
+
+* remove reference to non-existent example ([b430b0d](https://github.com/olympiad-bot/tex2image/commit/b430b0d15378d97526afef922accadd0228a2cea))
+
 ## [0.1.3](https://github.com/olympiad-bot/tex2image/compare/v0.1.2...v0.1.3) (2025-07-14)
 
 
