@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/olympiad-bot/tex2image/compare/v0.1.2...v0.1.3) (2025-07-14)
+
+
+### Documentation
+
+* add PyPI badge to README ([f1c7fc5](https://github.com/olympiad-bot/tex2image/commit/f1c7fc58b37eda8c7df7954652c967889ec3a22d))
+* migrate to material for mkdocs ([7cd505b](https://github.com/olympiad-bot/tex2image/commit/7cd505b029f53bdb2f05014842df323889ea31a7))
+
 ## [0.1.2](https://github.com/olympiad-bot/tex2image/compare/v0.1.1...v0.1.2) (2025-06-08)
 
 
