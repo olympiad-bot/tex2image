@@ -10,9 +10,3 @@ produce PDFs that are already set to an appropriate size, and then uses
 [poppler](https://poppler.freedesktop.org/) to convert the PDF to an image.
 You must make sure that `pdflatex` and `pdftoppm` are available for python to
 execute.
-
-## Example usage
-
-An easy way to use this library is via Docker.
-
-See the [`example`](https://github.com/olympiad-bot/tex2image/tree/main/examples) folder for a full example.
