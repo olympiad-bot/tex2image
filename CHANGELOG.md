@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/olympiad-bot/tex2image/compare/v0.1.5...v0.1.6) (2025-07-14)
+
+
+### Bug Fixes
+
+* change uv sync to --frozen in Dockerfile ([a0df07c](https://github.com/olympiad-bot/tex2image/commit/a0df07cac49d21e6d414babf708150bea7ecbe29))
+
 ## [0.1.5](https://github.com/olympiad-bot/tex2image/compare/v0.1.4...v0.1.5) (2025-07-14)
 
 
