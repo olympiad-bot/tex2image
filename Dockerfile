@@ -13,4 +13,4 @@ COPY README.md pyproject.toml uv.lock ./
 
 ENV UV_COMPILE_BYTECODE=1
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --locked --no-dev --extra server
+    uv sync --frozen --no-dev
