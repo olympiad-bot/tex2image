@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/olympiad-bot/tex2image/compare/v0.1.4...v0.1.5) (2025-07-14)
+
+
+### Documentation
+
+* remove conf.py ([ab9d99a](https://github.com/olympiad-bot/tex2image/commit/ab9d99a82fda578819c67eab5ff22376cfee473a))
+
 ## [0.1.4](https://github.com/olympiad-bot/tex2image/compare/v0.1.3...v0.1.4) (2025-07-14)
 
 
