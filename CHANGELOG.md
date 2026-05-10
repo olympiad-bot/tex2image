@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/olympiad-bot/tex2image/compare/v0.1.6...v1.0.0) (2026-05-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* add client/server system, improve docs and add examples
+
+### Features
+
+* add client/server system, improve docs and add examples ([05e2ae4](https://github.com/olympiad-bot/tex2image/commit/05e2ae423155633b3822602486d8bebbf3073d50))
+
 ## [0.1.5](https://github.com/olympiad-bot/tex2image/compare/v0.1.4...v0.1.5) (2025-07-14)
 
 
