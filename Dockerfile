@@ -13,4 +13,6 @@ COPY README.md pyproject.toml uv.lock ./
 
 ENV UV_COMPILE_BYTECODE=1
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen --no-dev
+    uv sync --frozen --no-dev --extra server
+
+ENTRYPOINT ["uv", "run", "--no-sync", "tex2image-server", "--host=0.0.0.0"]

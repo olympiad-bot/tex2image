@@ -7,7 +7,12 @@ theme:
     - search.share
     - search.suggest
 markdown_extensions:
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.highlight:
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
 plugins:
   - search
   - autorefs
