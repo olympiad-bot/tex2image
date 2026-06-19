@@ -12,8 +12,8 @@
       options.services.tex2image = with lib; with types; {
         enable = mkOption {
           type = bool;
-          default = true;
-          description = "Whether to run the tex2image container.";
+          default = false;
+          description = "Whether to run the tex2image service.";
         };
         image = mkOption {
           type = str;
