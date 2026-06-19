@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.1.0](https://github.com/olympiad-bot/tex2image/compare/v1.0.0...v1.1.0) (2026-06-19)
+
+
+### Features
+
+* add flake for tex2image service ([9ef7ab3](https://github.com/olympiad-bot/tex2image/commit/9ef7ab3fbc25cb6d9de58b7aa3ee85347b1ff2a8))
+
+
+### Bug Fixes
+
+* set enable default to false ([8ebbce2](https://github.com/olympiad-bot/tex2image/commit/8ebbce212d24a9561606650c177743f2d68db452))
+
+
+### Documentation
+
+* remove unused api_reference page ([315c358](https://github.com/olympiad-bot/tex2image/commit/315c3580cedec9a981b233a9ae3079476711622d))
+
 ## [1.0.0](https://github.com/olympiad-bot/tex2image/compare/v0.1.6...v1.0.0) (2026-05-10)
 
 
